@@ -99,10 +99,14 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
     font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+
 }
 .main_illustration{
     width: 400px;
     height: 400px;
+    filter: drop-shadow(0 0 0.75rem crimson);
 }
 /* #text_one{
     background: linear-gradient(to right, #FD4E5D , white);
@@ -176,12 +180,76 @@ body{
 .points_illustration{
     width: 300px;
     height: 300px;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
 }
 .points_text{
-    width: 50%;
+    width: 60%;
     height: 90%;
 }
+.points_title{
+    width: 100%;
+    height: 15%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Comfortaa', cursive;
+}
+.points_content{
+    width: 100%;
+    height: 85%;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.points_num{
+    width:50%;
+    height:50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.number_points{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #eee;
+    border-radius: 20%;
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+}
+.number_content{
+    width: 75%;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 5px;
+}
+.title_one{
+    text-decoration: solid;
+    font-size: 1.3rem;
+    font-family: 'Comfortaa', cursive;
+}
 
+/* options starts here */
+
+.options{
+    width: 100%;
+    height: 800px;
+    background-color: #FD4E5D;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.options_box{
+    width: 40%;
+    height: 300px;
+    background-color: #eee;
+    border-radius: 20px;
+}
 
 .crossline_downt{
     background-color: #B3CEE2;
@@ -199,8 +267,8 @@ body{
 
 .contact{
     width: 100%;
-    height: 300px;
-    background-color: pink;
+    height: 500px;
+    background-color: #182233;
 }
 
 @media (max-width:700px){
@@ -221,5 +289,37 @@ body{
     .main_illustration{
         width: 320px;
         height: 320px;
+    }
+
+    /* points starts here */
+    .points{
+      height: 850px;
+      flex-direction: column;
+    }
+    .points_illustration{
+        width: 320px;
+        height: 320px;
+    }
+    .points_text{
+        width: 90%;
+        height: 50%;
+    }
+    .points_title{
+        font-size: 1.5rem;
+    }
+    .points_num{
+        width: 100%;
+        height: 25%;
+    }
+
+    /* options starts here */
+
+    .options{
+        height: 1000px;
+
+    }
+    .options_box{
+        width: 90%;
+        height: 200px;
     }
 }
